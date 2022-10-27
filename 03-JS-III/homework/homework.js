@@ -9,9 +9,7 @@ function imprimirSumaNumeros() {
   // Pista: usa un acumulador
   // Tu código:
   let numero = 0;
-  for (i = 1; i <= 10; i++) {
-    numero = numero + i;
-  }
+  for (i = 1; i <= 10; i++) numero = numero + i;
   return numero;
 }
 
@@ -20,8 +18,8 @@ function encuentraPares(array) {
   // en el arreglo de enteros pasado como parámetro
   // Tu código:
   let arraySub = [];
-  for (i = 0; i < array.length; i++) {
-    if (array[i] % 2 == 0) arraySub.push(array[i]);
+  for (const number of array) {
+    if (number % 2 == 0) arraySub.push(number);
   }
   return arraySub;
 }
@@ -31,8 +29,8 @@ function elevaAlCuadrado(array) {
   // elevado al cuadrado
   // Tu código:
   let arrayAnswer = [];
-  for (i = 0; i < array.length; i++) {
-    let answer = array[i] ** 2;
+  for (const number of array) {
+    let answer = number ** 2;
     arrayAnswer.push(answer);
   }
   return arrayAnswer;
@@ -43,9 +41,7 @@ function sumaArray(array) {
   // de un arreglo de enteros dado
   // Tu código:
   let suma = 0;
-  for (i = 0; i < array.length; i++) {
-    suma = suma + array[i];
-  }
+  for (const number of array) suma = number + suma;
   return suma;
 }
 
