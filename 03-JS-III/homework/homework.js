@@ -25,12 +25,6 @@ function elevaAlCuadrado(array) {
   // Devuelve un arreglo con cada número del array
   // elevado al cuadrado
   // Tu código:
-  /* let arrayAnswer = [];
-  for (const number of array) {
-    let answer = number ** 2;
-    arrayAnswer.push(answer);
-  }
-  return arrayAnswer; */
   let arrayAnswer = array.map((number) => number ** 2);
   return arrayAnswer;
 }
