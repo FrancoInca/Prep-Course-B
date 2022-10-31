@@ -17,22 +17,21 @@ function encuentraPares(array) {
   // Devuelve un arreglo con los pares encontrados
   // en el arreglo de enteros pasado como parámetro
   // Tu código:
-  let arraySub = [];
-  for (const number of array) {
-    if (number % 2 == 0) arraySub.push(number);
-  }
-  return arraySub;
+  let answer = array.filter((n) => n % 2 == 0);
+  return answer;
 }
 
 function elevaAlCuadrado(array) {
   // Devuelve un arreglo con cada número del array
   // elevado al cuadrado
   // Tu código:
-  let arrayAnswer = [];
+  /* let arrayAnswer = [];
   for (const number of array) {
     let answer = number ** 2;
     arrayAnswer.push(answer);
   }
+  return arrayAnswer; */
+  let arrayAnswer = array.map((number) => number ** 2);
   return arrayAnswer;
 }
 
